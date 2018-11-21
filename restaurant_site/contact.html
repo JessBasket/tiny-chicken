@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Midna's Restaurant - Contact Us</title>
+    </head>
+	
+
+	<main>
+    <body>
+  <header>
+		<h1><div style="text-align: center;">Midna's Restaurant</h1>
+	</header>
+	
+	<nav> <!-- The nav element will include navigation buttons or links -->
+	<hr />
+
+		<tr>
+		<th><a href="index.html">Home</a></th>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		<th><a href="menu.html">Menu</a></th>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		<th><a href="contact.html">Contact Us</a></th>
+		</tr>
+	<hr /><br />
+	</nav>
+		
+		
+<form action="submit.html" method="POST">
+	<label for="name">Name:</label>
+	<input type="text" id="name" name="name"> <br /><br />
+	
+	<label for="email">Email:</label>
+	<input type="text" id="email" name="email"> <br /><br />
+	
+	<label for "phone">Phone:</label>
+	<input type="text" id="phone" name="phone"</label><br /><br />
+	
+	<label for="reason">Reason for Inquiry:</label>
+	<select id="reason" name="reason">
+	<option value="catering" selected>Catering</option>
+	<option value="privateParty">Private Party</option>
+	<option value="feedback">Feedback</option>
+	<option value="other">Other</option>
+	</select>
+	<br /><br />
+	<label for="info">Additional Information:</label>
+	<textarea id="info" name="info"></textarea><br /><br />
+	
+	
+	<fieldset>
+	<legend>Have you been to the restaurant?</legend>
+	<input type="radio" id="choice1" name="questionnaire" value="yes">
+	<label for="choice1">Yes</label>
+	<input type="radio" id="choice2" name="questionnaire" value="no" checked>
+	<label for="choice2">No</label>
+	</fieldset><br />
+	
+	<fieldset>
+	<legend>Best days to contact you:</legend>
+	<input type="checkbox" id="Monday" name="Monday" value="M"> 
+	<label for="Monday">M</label>
+	<input type="checkbox" id="Tuesday" name="Tuesday" value="T">
+	<label for="Tuesday">T</label>
+	<input type="checkbox" id="Wednesday" name="Wednesday" value="W">
+	<label for="Wednesday">W</label>
+	<input type="checkbox" id="Thursday" name="Thursday" value="Th">
+	<label for="Thursday">Th</label>
+	<input type="checkbox" id="Friday" name="Friday" value="F">
+	<label for="Friday">F</label>
+	</fieldset><br />
+	
+	
+	
+	<input type="submit" name="submit" value="Send Request"> <br /><br />
+		
+		
+	<hr />
+	<footer>
+		<p><div style="text-align: center;"><strong>555 Main Street, Newark, Delaware, 21519</strong></p>
+		<p><strong>(302)-555-9999</strong></p>
+	</footer>
+		
+	</main>
+    </body>
+</html>
