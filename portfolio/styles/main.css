@@ -1,0 +1,128 @@
+/*
+Creator: Jessica McCormick
+Date created: 11/23/2018
+Date last modified: 11/23/2018
+*/
+
+body {
+    background-color: #c0c0c6;
+	font-family: arial, helvetica, sans-serif;
+	color: #5e4e7b;
+	max-width: 1200px;
+    margin: 0 auto;
+	border: 2px solid #270e2f;
+	padding: 10px
+}
+
+header, footer {
+    background-color: #4a3361;
+    color: #c0c0c6;
+	height: 100px;
+	text-align: center;
+	padding: 30px 10px 20px 10px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+nav {
+    border-top: 3px dashed #546a7b;
+    border-bottom: 3px dashed #546a7b;
+	margin-top: 4px;
+}
+
+label, fieldset{
+    font-size: 1.1em;
+}
+
+input[type=text] {
+    border: 2px solid #270e2f;
+    width: 50%;
+    padding: 8px 8px;
+    margin: 12px 0;
+    box-sizing: border-box;
+    font-size: 1.1em;
+}
+
+fieldset {
+    background-color: #c0c0c6;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 12px 0;
+    box-sizing:	border-box;
+}
+
+select, textarea {
+    margin: 12px 0;
+    font-size: 1em;
+}
+
+input[type=submit] {
+    font-size: 1.2em;
+    background-color: #270e2f;
+    color: #c0c0c6;
+    padding: 4px 8px;
+}
+
+input[type=submit]:hover {
+    background-color: #5e4e7b;
+    color: #c0c0c6;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    padding: 12px 20px;
+    margin: 12px 0;
+    box-sizing: border-box;
+    border: 2px solid #270e2f;
+    border-radius: 3px;
+    background-color: #fff;
+    resize: none;
+}
+
+.clear-float {
+    clear:both;
+}
+
+article img {
+   float:left;
+}
+
+.right-content {
+    float:left;
+}
+
+article {
+    margin-bottom: 16px;
+}
+
+nav a {
+    background-color: #9794ad;
+    color: #c0c0c6;
+    padding: 8px;
+    border: thin solid #270e2f;
+    text-decoration: none;
+    text-align: center;
+	display: block;
+	margin: 20px;
+	width: 100px;
+	float: left;
+}
+
+nav a:visited {
+    color: #381d48;
+}
+
+nav a:hover {
+    background-color: #381d48;
+    color: #9794ad;
+}
+
+nav a:active {
+    font-weight: bold;
+}
+
+ 
+}
