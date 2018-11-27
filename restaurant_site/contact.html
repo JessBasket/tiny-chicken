@@ -2,36 +2,41 @@
 <html>
     <head>
         <title>Midna's Restaurant - Contact Us</title>
+		
+		<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+		
+		<style>
+			.required {
+				font-weight: bold;
+			}
+		
+		</style>
     </head>
 	
 
 	<main>
     <body>
   <header>
-		<h1><div style="text-align: center;">Midna's Restaurant</h1>
+		<h1>Midna's Restaurant</h1>
 	</header>
 	
 	<nav> <!-- The nav element will include navigation buttons or links -->
-	<hr />
-
-		<tr>
-		<th><a href="index.html">Home</a></th>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-		<th><a href="menu.html">Menu</a></th>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-		<th><a href="contact.html">Contact Us</a></th>
-		</tr>
-	<hr /><br />
+		<p><a href="index.html">Home</a></p>
+		<p><a href="menu.html">Menu</a></p>
+		<p><a href="contact.html">Contact Us</a></p>
+		<div class="clear-float"></div>
 	</nav>
 		
 		
 <form action="submit.html" method="POST">
-	<label for="name">Name:</label>
+	<label style="font-weight: bold;" for="name">Name:</label>
 	<input type="text" id="name" name="name"> <br /><br />
 	
-	<label for="email">Email:</label>
-	<input type="text" id="email" name="email"> <br /><br />
+	<label style="font-weight: bold;" for="email">Email:</label>
+	<input type="text" id="email" name="email" > <br /><br />
 	
-	<label for "phone">Phone:</label>
-	<input type="text" id="phone" name="phone"</label><br /><br />
+	<label style="font-weight: bold;" for "phone">Phone:</label>
+	<input type="text" id="phone" name="phone"> <br /><br />
 	
 	<label for="reason">Reason for Inquiry:</label>
 	<select id="reason" name="reason">
@@ -72,10 +77,9 @@
 	<input type="submit" name="submit" value="Send Request"> <br /><br />
 		
 		
-	<hr />
 	<footer>
-		<p><div style="text-align: center;"><strong>555 Main Street, Newark, Delaware, 21519</strong></p>
-		<p><strong>(302)-555-9999</strong></p>
+		<p>555 Main Street, Newark, Delaware, 21519</p>
+		<p>(302)-555-9999</p>
 	</footer>
 		
 	</main>

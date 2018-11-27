@@ -1,0 +1,75 @@
+/*
+Creator: Jessica McCormick
+Date created: 11/23/2018
+Date last modified: 11/23/2018
+*/
+
+header {
+    background-color: #4b1116;
+    color: #bfb498;
+	height: 100px;
+	text-align: center;
+	padding: 30px 10px 20px 10px;
+	font-family: 'Helvetica', 'arial';
+	font-size: 1.2em;
+}
+
+footer {
+	margin-top: 15px;
+    background-color: #4b1116;
+    color: #bfb498;
+	height: 100px;
+	text-align: center;
+	padding: 30px 10px 20px 10px;
+	font-weight: 700;
+	font-family: 'Helvetica', 'arial';
+	
+}
+
+nav {
+	margin-bottom: 15px;
+	background-color: #dcdbce;
+	border: 3px solid black;
+}
+
+body {
+	
+	max-width: 1200px;
+	margin: 0 auto;
+
+}
+
+.clear-float {
+    clear:both;
+}
+
+
+nav a {
+    background-color: #682e26;
+    color: #dcdbce;
+    padding: 8px;
+    border: thin solid #2e0310;
+    text-decoration: none;
+    text-align: center;
+	display: block;
+	margin: 20px;
+	width: 100px;
+	float: left;
+}
+
+nav a:visited {
+    color: #a2876a;
+	background-color: #2e0310;
+}
+
+nav a:hover {
+    background-color: #855944;
+    color: #bfb498;
+	font-weight: bold;
+}
+
+nav a:active {
+    font-weight: bold;
+}
+
+
