@@ -1,0 +1,19 @@
+//CODE PRACTICE: if Statements
+
+if (n % 2 == 0) {
+    result = (result+10);
+} else {
+    result = (result-10);
+}
+
+//CODE PRACTICE: for Loops
+
+for (loopCounter = 0; loopCounter <= n; loopCounter++) {
+	sum = (loopCounter + sum);
+}
+
+//CODE PRACTICE: Defining Functions
+
+function addTwoNumbers(firstNumber, secondNumber){ 
+    return (firtNumber + secondNumber);
+}
