@@ -2,12 +2,26 @@
 <html>
     <head>
         <title>Midna's Restaurant - Contact Us</title>
-		
+		<script type="text/javascript" src="restaurant_site.js"></script>
+		<!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+		<!-- Font Awesome CDN -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		<!-- External Style Sheet -->
 		<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+		<!-- Link to external js -->
+		<script type="text/javascript" src="restaurant_site.js"></script>
+		<!-- Message displayed if js is not enabled -->
+		<noscript><p style="font-weight: bold; text-align: center; color: red; background-color: yellow"> We have detected that you do not have JavaScript enabled. Please enable JavaScript for the best experience on this website.</p></noscript>
+		
 		
 		<style>
 			.required {
 				font-weight: bold;
+			}
+			
+			.alert {
+				display: none;
 			}
 		
 		</style>
@@ -16,72 +30,116 @@
 
 	<main>
     <body>
-  <header>
-		<h1>Midna's Restaurant</h1>
+	<div class="container">
+	<header>
+		<div class="row">
+			<div class="col-lg col-md">
+				<h1>Midna's Restaurant</h1>
+			</div>
+		</div>
 	</header>
 	
-	<nav> <!-- The nav element will include navigation buttons or links -->
-		<p><a href="index.html">Home</a></p>
-		<p><a href="menu.html">Menu</a></p>
-		<p><a href="contact.html">Contact Us</a></p>
+	
+			<nav> <!-- The nav element will include navigation buttons or links -->
+			<div class="row">
+		<div class="col-lg col-md">
+				<a class="btn badge-tab" href="index.html"><i class="fas fa-home"></i></a>
+				<a class="btn badge-tab" href="menu.html">Menu</a>
+				<a class="btn badge-tab" href="contact.html">Contact Us</a>
 		<div class="clear-float"></div>
-	</nav>
+		</div>
+	</div>
+			</nav>
 		
 		
-<form action="submit.html" method="POST">
-	<label style="font-weight: bold;" for="name">Name:</label>
-	<input type="text" id="name" name="name"> <br /><br />
-	
-	<label style="font-weight: bold;" for="email">Email:</label>
-	<input type="text" id="email" name="email" > <br /><br />
-	
-	<label style="font-weight: bold;" for "phone">Phone:</label>
-	<input type="text" id="phone" name="phone"> <br /><br />
-	
-	<label for="reason">Reason for Inquiry:</label>
-	<select id="reason" name="reason">
-	<option value="catering" selected>Catering</option>
-	<option value="privateParty">Private Party</option>
-	<option value="feedback">Feedback</option>
-	<option value="other">Other</option>
-	</select>
-	<br /><br />
-	<label for="info">Additional Information:</label>
-	<textarea id="info" name="info"></textarea><br /><br />
-	
-	
-	<fieldset>
-	<legend>Have you been to the restaurant?</legend>
-	<input type="radio" id="choice1" name="questionnaire" value="yes">
-	<label for="choice1">Yes</label>
-	<input type="radio" id="choice2" name="questionnaire" value="no" checked>
-	<label for="choice2">No</label>
-	</fieldset><br />
-	
-	<fieldset>
-	<legend>Best days to contact you:</legend>
-	<input type="checkbox" id="Monday" name="Monday" value="M"> 
-	<label for="Monday">M</label>
-	<input type="checkbox" id="Tuesday" name="Tuesday" value="T">
-	<label for="Tuesday">T</label>
-	<input type="checkbox" id="Wednesday" name="Wednesday" value="W">
-	<label for="Wednesday">W</label>
-	<input type="checkbox" id="Thursday" name="Thursday" value="Th">
-	<label for="Thursday">Th</label>
-	<input type="checkbox" id="Friday" name="Friday" value="F">
-	<label for="Friday">F</label>
-	</fieldset><br />
-	
-	
-	
-	<input type="submit" name="submit" value="Send Request"> <br /><br />
 		
+<form name="ContactForm" action="submit.html" beforeSubmit="return validateName()" method="POST" >
+		
+		<div class="form-group">
+		<label style="font-weight: bold;" for="FullName">Name:</label>
+		<input type="text" id="FullName" name="FullName" /><br /><br />
+		</div>
+		
+		<div class="form-group">
+		<label style="font-weight: bold;" for="email">Email:</label>
+		<input type="text" id="email" name="email"  /> <br /><br />
+		</div>
+		
+		<div class="form-group">
+		<label style="font-weight: bold;" for "phone">Phone:</label>
+		<input type="text" id="phone" name="phone" /> <br /><br />
+		</div>
+		
+		<div class="form-group">
+		<label for="reason">Reason for Inquiry:</label>
+		<select id="reason" name="reason">
+		<option value="catering" selected>Catering</option>
+		<option value="privateParty">Private Party</option>
+		<option value="feedback">Feedback</option>
+		<option value="other">Other</option>
+		</select>
+		</div>
+		<br /><br />
+		
+		<div class="form-group">
+		<label for="info">Additional Information:</label>
+		<textarea id="info" name="info" ></textarea><br /><br />
+		</div>
+		
+		<div class="form-group">
+		<fieldset>
+		<legend>Have you been to the restaurant?</legend>
+		<input type="radio" id="choice1" name="questionnaire" value="yes">
+		<label for="choice1">Yes</label>
+		<input type="radio" id="choice2" name="questionnaire" value="no" checked>
+		<label for="choice2">No</label>
+		</fieldset>
+		</div>
+		<br />
+		
+		<div class="form-group">
+		<fieldset>
+		<legend>Best days to contact you:</legend>
+		<input type="checkbox" id="Monday" name="Monday" value="M"> 
+		<label for="Monday">M</label>
+		<input type="checkbox" id="Tuesday" name="Tuesday" value="T">
+		<label for="Tuesday">T</label>
+		<input type="checkbox" id="Wednesday" name="Wednesday" value="W">
+		<label for="Wednesday">W</label>
+		<input type="checkbox" id="Thursday" name="Thursday" value="Th">
+		<label for="Thursday">Th</label>
+		<input type="checkbox" id="Friday" name="Friday" value="F">
+		<label for="Friday">F</label>
+		</fieldset>
+		</div>
+		<br />
+		
+		
+		<div class="alert alert-success" role="alert">
+  A simple success alert—check it out!
+		</div>
+
+
+
+
+	<input type="button" value="Check If Form Data Is Valid" onclick="return validateName()" />
+		
+		<input type="submit" name="submit" value="Send Request"> <br /><br />
+		
+	</form>
+	
 		
 	<footer>
 		<p>555 Main Street, Newark, Delaware, 21519</p>
 		<p>(302)-555-9999</p>
 	</footer>
-		
+	</div>
 	</main>
+	
+	<!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	 
     </body>
 </html>

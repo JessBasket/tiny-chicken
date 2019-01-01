@@ -3,7 +3,18 @@
     <head>
         <title>Midna's Restaurant - Home</title>
 		
+		<!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+		<!-- Font Awesome CDN -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		<!-- External Style Sheet -->
 		<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+		<!-- Link to external js -->
+		<script type="text/javascript" src="restaurant_site.js"></script>
+		<!-- Message displayed if js is not enabled -->
+		<noscript><p style="font-weight: bold; text-align: center; color: red; background-color: yellow"> We have detected that you do not have JavaScript enabled. Please enable JavaScript for the best experience on this website.</p></noscript>
+		
+		
 		<style>
 			body {
 		background-color: #a2876a;
@@ -13,30 +24,68 @@
 		
     </head>
 	
-	<body>
 	<main>
+	<body>
+	<div class="container-fluid">
+	
 	
 	<header>
 		<h1>Midna's Restaurant</h1>
 	</header>
 	
 	<nav> <!-- The nav element will include navigation buttons or links -->
-		<p><a href="index.html">Home</a></p>
-		<p><a href="menu.html">Menu</a></p>
-		<p><a href="contact.html">Contact Us</a></p>
+		<a class="btn badge-tab" href="index.html"><i class="fas fa-home"></i></a>
+		<a class="btn badge-tab" href="menu.html">Menu</a>
+		<a class="btn badge-tab" href="contact.html">Contact Us</a>
 		<div class="clear-float"></div>
 	</nav>
 	
+
 	<section>
 		<article>
 	<div style ="text-align: center">
-		<img src="images/banner.jpg" alt="Picture of Restaurant Table" style="border: thick black solid" />
+		<img src="images/banner.jpg" alt="Picture of Restaurant Table" class="img-fluid" style="border: thick black solid; margin-bottom: 20px;" />
 	</div>
+	
+	<div class="jumbotron" style ="background-color: #dcdbce; border: 3px solid #4b1116" >
+	  <h1 class="display-4">Midna's Is Expanding!</h1>
+	  <p class="lead">New location opening in Wilmington - Spring 2019</p>
+	  <hr class="my-4">
+	  <p>Midna's is pleased to announce that we will be opening a brand new location in Wilmington. Our new restaurant located in the River Front district will seat 150 guests and will have great view of the river. Check back soon for an official opening date!</p>
+	</div>
+	
+
 	 
-		<h2><div style="text-align: center;"><em>About Midna's</em></h2>
-		<p><div style="text-align: center; padding: 30px">At Midna's Restaurant, our mission is simple: provide great food and service. We start with locally sourced ingredients and use them to create delicious meals to be enjoyed by all. Come and enjoy our spacious dining room which seats up to 75 guests and includes a bar serving local brews. Our friendly and courteous wait staff is always ready to serve you!  </p>
+		<h2><div style="text-align: center;"><em>About Midna's</em></h2></div>
+		<p><div style="text-align: center; padding: 30px">At Midna's Restaurant, our mission is simple: provide great food and service. We start with locally sourced ingredients and use them to create delicious meals to be enjoyed by all. Come and enjoy our spacious dining room which seats up to 75 guests and includes a bar serving local brews. Our friendly and courteous wait staff is always ready to serve you!  </p></div>
 		</article>
 		</section>
+		
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" style="width: 700px; margin: 0 auto;">
+            
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img src="images/new_location.jpg" class="img-fluid" alt="We're opening a new location!">
+                    <div class="carousel-caption">
+                        <h1>We're opening a new location!</h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/seasonal_menu.jpg" class="img-fluid" alt="We're rolling out our seasonal menu, with special options for the season.">
+					<div class="carousel-caption">
+                        <h1>We're rolling out our seasonal menu, with special options for the season.</h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/special.jpg" class="img-fluid" alt="The Drink of the Month is SG Special Brew.">
+					<div class="carousel-caption">
+                        <h1>The Drink of the Month is SG Special Brew.</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
 	
 	  
 	<footer>
@@ -44,7 +93,16 @@
 		<p>(302)-555-9999</p>
 	</footer>
 	
+	</div>
 	</main>
+	
+	
+	  
+	  <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	 
 	  
 </body>
 </html>
