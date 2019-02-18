@@ -1,0 +1,2 @@
+Pulp Fiction::Jan.::PG-13::Tarantino::Paramount::This is a new note.
+Hateful Eight::Nov.::R::Tarentino::Paramount::Test note.
